@@ -1,17 +1,22 @@
-let SquareX = 200; // Posición inicial en el eje X
-let SquareY = 200; // Posición inicial en el eje Y
-let squareSide = 50; // Tamaño del cuadrado
-let Width = 50; // Ancho del canvas
-let Height = 50; // Alto del canvas
+let SquareX = 200; // Initial X position
+let SquareY = 200; // Initial Y position
+const squareSide = 50; // Square size
+const canvasWidth = 400; // Canvas width
+const canvasHeight = 400; // Canvas height
+const step = 5; // Step size for movement
 
 function setup() {
-    createCanvas(400, 400); // Crea un lienzo de 400x400 píxeles
-  }
-  
-  function draw() {
-    background(220); // white background. 
-    fill(255, 0, 0);
-    rect(SquareX, SquareY, Width, Height);
-  }
+  createCanvas(canvasWidth, canvasHeight); // Create a canvas
+}
 
-  
+function draw() {
+  background(25); // White background
+  fill(255, 0, 0);
+  rect(SquareX, SquareY, squareSide, squareSide); // Draw the square
+  moveSquare();
+}
+
+
+
+
+      
