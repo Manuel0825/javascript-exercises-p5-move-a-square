@@ -10,7 +10,7 @@ function setup() {
 }
 
 function draw() {
-  background(25); // White background
+  background(25); // Black background
   fill(255, 0, 0);
   rect(SquareX, SquareY, squareSide, squareSide); // Draw the square
   moveSquare();
